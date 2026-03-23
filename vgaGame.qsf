@@ -1,0 +1,31 @@
+set_global_assignment -name FAMILY "Cyclone 10 LP"
+set_global_assignment -name DEVICE 10CL025YU256I7G
+set_global_assignment -name TOP_LEVEL_ENTITY vgaGame
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name VERILOG_FILE vgaGame.v
+
+
+set_location_assignment PIN_E2 -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+
+set_location_assignment PIN_F3 -to rts
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rts
+
+
+set_location_assignment PIN_R11 -to h_sync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to h_sync
+
+set_location_assignment PIN_R12 -to v_sync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to v_sync
+
+set_location_assignment PIN_M10 -to red
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to red
+
+set_location_assignment PIN_R13 -to green
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to green
+
+set_location_assignment PIN_R14 -to blue
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to blue
+
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"

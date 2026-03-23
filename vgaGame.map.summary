@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 19 12:43:41 2026
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : vgaGame
+Top-level Entity Name : vgaGame
+Family : Cyclone 10 LP
+Total logic elements : 200
+    Total combinational functions : 200
+    Dedicated logic registers : 72
+Total registers : 72
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
