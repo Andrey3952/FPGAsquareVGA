@@ -1,24 +1,11 @@
 `timescale 1ns / 1ps
 module vgaGame(
     input wire clk, rts,
+    input wire [9:0] ball_x, ball_y,
+    input wire [9:0] paddle1_y, paddle2_y
     output wire h_sync, v_sync,
     output wire red, green, blue
 );
-
-wire [9:0] ball_x;
-wire [9:0] ball_y;
-wire [9:0] paddle1_y;
-wire [9:0] paddle2_y;
-
-soc_system u0 (
-    .clk_clk                               (clk),       // Підключаємо головний пульс
-    .reset_reset_n                         (rts),       // Підключаємо кнопку скидання
-    .pio_ball_x_external_connection_export (ball_x),    // Дріт X м'ячика
-    .pio_ball_y_external_connection_export (ball_y),    // Дріт Y м'ячика
-    .pio_pad1_y_external_connection_export (paddle1_y), // Дріт лівої ракетки
-    .pio_pad2_y_external_connection_export (paddle2_y)  // Дріт правої ракетки
-);
-
 
 reg pixel_en;
 
