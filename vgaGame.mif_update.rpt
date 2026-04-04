@@ -1,0 +1,97 @@
+MIF/HEX Update report for vgaGame
+Fri Apr  3 23:54:14 2026
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Fri Apr  3 23:54:14 2026 ;
+; Revision Name         ; vgaGame                               ;
+; Top-level Entity Name ; vgaGame                               ;
+; Family                ; Cyclone 10 LP                         ;
+; Device                ; 10CL025YU256I7G                       ;
++-----------------------+---------------------------------------+
+
+
++--------------------------------------------------------------+
+; MIF/HEX Update Processed Files                               ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex ;
++--------------------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime MIF/HEX Update
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Fri Apr  3 23:54:13 2026
+Info: Command: quartus_cdb vgaGame -c vgaGame --update_mif
+Warning (113015): Width of data items in "soc_system_ram.hex" is greater than the memory width. Wrapping data items to subsequent addresses. Found 1024 warnings, reporting 10 File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 1
+    Warning (113009): Data at line (2) of memory initialization file "soc_system_ram.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 2
+    Warning (113009): Data at line (3) of memory initialization file "soc_system_ram.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 3
+    Warning (113009): Data at line (4) of memory initialization file "soc_system_ram.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 4
+    Warning (113009): Data at line (5) of memory initialization file "soc_system_ram.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 5
+    Warning (113009): Data at line (6) of memory initialization file "soc_system_ram.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 6
+    Warning (113009): Data at line (7) of memory initialization file "soc_system_ram.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 7
+    Warning (113009): Data at line (8) of memory initialization file "soc_system_ram.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 8
+    Warning (113009): Data at line (9) of memory initialization file "soc_system_ram.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 9
+    Warning (113009): Data at line (10) of memory initialization file "soc_system_ram.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 10
+    Warning (113009): Data at line (11) of memory initialization file "soc_system_ram.hex" is too wide to fit in one memory word. Wrapping data to subsequent addresses. File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 11
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex File: /home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system_ram.hex Line: 0
+Info: Quartus Prime MIF/HEX Update was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 635 megabytes
+    Info: Processing ended: Fri Apr  3 23:54:14 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

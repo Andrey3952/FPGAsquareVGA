@@ -1,0 +1,6 @@
+22:47:01 **** Clean-only build of configuration Nios II for project pong_game_bsp ****
+make clean 
+[BSP clean complete]
+
+22:47:02 Build Finished (took 763ms)
+

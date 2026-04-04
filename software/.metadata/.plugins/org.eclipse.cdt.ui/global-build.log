@@ -1,0 +1,13 @@
+23:54:07 **** Build of configuration Nios II for project pong_game ****
+make mem_init_generate 
+Info: Building ../pong_game_bsp/
+make --no-print-directory -C ../pong_game_bsp/
+[BSP build complete]
+Post-processing to create mem_init/soc_system_ram.hex...
+elf2hex pong_game.elf 0x00010000 0x00017fff --width=32 --little-endian-mem --create-lanes=0 mem_init/soc_system_ram.hex
+Post-processing to create mem_init/hdl_sim/soc_system_ram.dat...
+elf2dat --infile=pong_game.elf --outfile=mem_init/hdl_sim/soc_system_ram.dat \
+	--base=0x00010000 --end=0x00017fff --width=32 \
+	--little-endian-mem --create-lanes=0 
+Post-processing to create mem_init/hdl_sim/soc_system_ram.sym...
+nios2-elf-nm -n pong_game.elf > mem_init/hdl_sim/soc_system_ram.sym

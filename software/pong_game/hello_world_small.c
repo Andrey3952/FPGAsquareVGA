@@ -1,0 +1,62 @@
+#include "sys/alt_stdio.h"
+#include "system.h"       // Тут лежать адреси твоїх PIO
+#include "altera_avalon_pio_regs.h" // Функції для роботи з PIO
+#include <unistd.h>       // Для функції usleep()
+
+int main()
+{
+
+  // Початкові координати
+  int ball_x = 320;
+  int ball_y = 240;
+  int pad1_y = 210;
+  int pad2_y = 210;
+
+  // Швидкість м'яча
+  int speed_x = 2;
+  int speed_y = 2;
+
+  // Розміри (щоб розраховувати відбиття від стін)
+  int ball_size = 10;
+  int screen_w = 640;
+  int screen_h = 480;
+
+  /* Нескінченний ігровий цикл */
+  while (1)
+  {
+      // 1. ФІЗИКА М'ЯЧА
+      ball_x = ball_x + speed_x;
+      ball_y = ball_y + speed_y;
+
+      // Відбиття від верхньої та нижньої стін
+      if (ball_y <= 0) {
+          speed_y = -speed_y;
+      }
+      if (ball_y + ball_size >= screen_h) {
+          speed_y = -speed_y;
+      }
+
+      // Відбиття від лівої та правої стін (поки що без ракеток)
+      if (ball_x <= 0) {
+          speed_x = -speed_x;
+      }
+      if (ball_x + ball_size >= screen_w) {
+          speed_x = -speed_x;
+      }
+
+      // 2. ВІДПРАВКА ДАНИХ НА "ВІДЕОКАРТУ" (FPGA)
+      // IOWR_ALTERA_AVALON_PIO_DATA - це макрос для запису в порт
+      // PIO_BALL_X_BASE - це автоматично згенерована адреса твого PIO
+      IOWR_ALTERA_AVALON_PIO_DATA(PIO_BALL_X_BASE, ball_x);
+      IOWR_ALTERA_AVALON_PIO_DATA(PIO_BALL_Y_BASE, ball_y);
+      IOWR_ALTERA_AVALON_PIO_DATA(PIO_PAD1_Y_BASE, pad1_y);
+      IOWR_ALTERA_AVALON_PIO_DATA(PIO_PAD2_Y_BASE, pad2_y);
+
+      // 3. ПАУЗА (~60 FPS)
+      for (volatile int delay = 0; delay < 100000; delay++) {
+                // Процесор просто крутить цикл, щоб витратити час
+            }
+  }
+
+  return 0;
+}

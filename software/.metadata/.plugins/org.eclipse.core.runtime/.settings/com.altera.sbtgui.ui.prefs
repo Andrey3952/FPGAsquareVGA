@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=/home/andrii/Documents/FPGA/FPGAsquareVGA/software/pong_game
+newSoftwareExampleWizardPage.sopcinfoFile=/home/andrii/Documents/FPGA/FPGAsquareVGA/soc_system.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=/home/andrii/Documents/FPGA/FPGAsquareVGA/software/pong_game_bsp

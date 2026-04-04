@@ -134,7 +134,7 @@ module soc_system_mm_interconnect_0_router
     // Figure out the number of bits to mask off for each slave span
     // during address decoding
     // -------------------------------------------------------
-    localparam PAD0 = log2ceil(64'h20000 - 64'h10000); 
+    localparam PAD0 = log2ceil(64'h18000 - 64'h10000); 
     localparam PAD1 = log2ceil(64'h21000 - 64'h20800); 
     localparam PAD2 = log2ceil(64'h21010 - 64'h21000); 
     localparam PAD3 = log2ceil(64'h21020 - 64'h21010); 
@@ -194,7 +194,7 @@ module soc_system_mm_interconnect_0_router
         // Sets the channel and destination ID based on the address
         // --------------------------------------------------
 
-    // ( 0x10000 .. 0x20000 )
+    // ( 0x10000 .. 0x18000 )
     if ( {address[RG:PAD0],{PAD0{1'b0}}} == 18'h10000   ) begin
             src_channel = 7'b0000100;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 6;

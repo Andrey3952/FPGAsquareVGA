@@ -41,7 +41,7 @@ module soc_system (
 	wire  [31:0] mm_interconnect_0_cpu_debug_mem_slave_writedata;      // mm_interconnect_0:cpu_debug_mem_slave_writedata -> cpu:debug_mem_slave_writedata
 	wire         mm_interconnect_0_ram_s1_chipselect;                  // mm_interconnect_0:ram_s1_chipselect -> ram:chipselect
 	wire  [31:0] mm_interconnect_0_ram_s1_readdata;                    // ram:readdata -> mm_interconnect_0:ram_s1_readdata
-	wire  [13:0] mm_interconnect_0_ram_s1_address;                     // mm_interconnect_0:ram_s1_address -> ram:address
+	wire  [12:0] mm_interconnect_0_ram_s1_address;                     // mm_interconnect_0:ram_s1_address -> ram:address
 	wire   [3:0] mm_interconnect_0_ram_s1_byteenable;                  // mm_interconnect_0:ram_s1_byteenable -> ram:byteenable
 	wire         mm_interconnect_0_ram_s1_write;                       // mm_interconnect_0:ram_s1_write -> ram:write
 	wire  [31:0] mm_interconnect_0_ram_s1_writedata;                   // mm_interconnect_0:ram_s1_writedata -> ram:writedata

@@ -1,5 +1,5 @@
 Assembler report for vgaGame
-Thu Mar 19 12:43:52 2026
+Fri Apr  3 23:54:17 2026
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -9,9 +9,10 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   1. Legal Notice
   2. Assembler Summary
   3. Assembler Settings
-  4. Assembler Generated Files
-  5. Assembler Device Options: F:/FPGA/vgaGame/vgaGame.sof
-  6. Assembler Messages
+  4. Assembler Encrypted IP Cores Summary
+  5. Assembler Generated Files
+  6. Assembler Device Options: vgaGame.sof
+  7. Assembler Messages
 
 
 
@@ -38,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Mar 19 12:43:52 2026 ;
+; Assembler Status      ; Successful - Fri Apr  3 23:54:17 2026 ;
 ; Revision Name         ; vgaGame                               ;
 ; Top-level Entity Name ; vgaGame                               ;
 ; Family                ; Cyclone 10 LP                         ;
@@ -46,30 +47,67 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------+---------------------------------------+
 
 
-+----------------------------------+
-; Assembler Settings               ;
-+--------+---------+---------------+
-; Option ; Setting ; Default Value ;
-+--------+---------+---------------+
++---------------------------------------------------------------------------------------------------------------+
+; Assembler Settings                                                                                            ;
++-----------------------------------------------------------------------------+----------------+----------------+
+; Option                                                                      ; Setting        ; Default Value  ;
++-----------------------------------------------------------------------------+----------------+----------------+
+; Maximum processors allowed for parallel compilation                         ; All            ;                ;
+; Use smart compilation                                                       ; Off            ; Off            ;
+; Enable parallel Assembler and Timing Analyzer during compilation            ; On             ; On             ;
+; Enable compact report table                                                 ; Off            ; Off            ;
+; Generate compressed bitstreams                                              ; On             ; On             ;
+; Compression mode                                                            ; Off            ; Off            ;
+; Clock source for configuration device                                       ; Internal       ; Internal       ;
+; Clock frequency of the configuration device                                 ; 10 MHZ         ; 10 MHz         ;
+; Divide clock frequency by                                                   ; 1              ; 1              ;
+; Auto user code                                                              ; On             ; On             ;
+; Use configuration device                                                    ; Off            ; Off            ;
+; Configuration device                                                        ; Auto           ; Auto           ;
+; Voltage output format                                                       ; Auto discovery ; Auto discovery ;
+; Configuration device auto user code                                         ; Off            ; Off            ;
+; Generate Tabular Text File (.ttf) For Target Device                         ; Off            ; Off            ;
+; Generate Raw Binary File (.rbf) For Target Device                           ; Off            ; Off            ;
+; Generate Hexadecimal (Intel-Format) Output File (.hexout) for Target Device ; Off            ; Off            ;
+; Hexadecimal Output File start address                                       ; 0              ; 0              ;
+; Hexadecimal Output File count direction                                     ; Up             ; Up             ;
+; Release clears before tri-states                                            ; Off            ; Off            ;
+; Auto-restart configuration after error                                      ; On             ; On             ;
+; Enable OCT_DONE                                                             ; Off            ; Off            ;
+; Generate Serial Vector Format File (.svf) for Target Device                 ; Off            ; Off            ;
+; Generate a JEDEC STAPL Format File (.jam) for Target Device                 ; Off            ; Off            ;
+; Generate a compressed Jam STAPL Byte Code 2.0 File (.jbc) for Target Device ; Off            ; Off            ;
+; Generate a compressed Jam STAPL Byte Code 2.0 File (.jbc) for Target Device ; On             ; On             ;
++-----------------------------------------------------------------------------+----------------+----------------+
 
 
-+-----------------------------+
-; Assembler Generated Files   ;
-+-----------------------------+
-; File Name                   ;
-+-----------------------------+
-; F:/FPGA/vgaGame/vgaGame.sof ;
-+-----------------------------+
++------------------------------------------------+
+; Assembler Encrypted IP Cores Summary           ;
++--------+------------------------+--------------+
+; Vendor ; IP Core Name           ; License Type ;
++--------+------------------------+--------------+
+; Altera ; Signal Tap (6AF7 BCE1) ; Licensed     ;
+; Altera ; Signal Tap (6AF7 BCEC) ; Licensed     ;
++--------+------------------------+--------------+
 
 
 +-------------------------------------------------------+
-; Assembler Device Options: F:/FPGA/vgaGame/vgaGame.sof ;
-+----------------+--------------------------------------+
-; Option         ; Setting                              ;
-+----------------+--------------------------------------+
-; JTAG usercode  ; 0x0014BD12                           ;
-; Checksum       ; 0x0014BD12                           ;
-+----------------+--------------------------------------+
+; Assembler Generated Files                             ;
++-------------------------------------------------------+
+; File Name                                             ;
++-------------------------------------------------------+
+; /home/andrii/Documents/FPGA/FPGAsquareVGA/vgaGame.sof ;
++-------------------------------------------------------+
+
+
++---------------------------------------+
+; Assembler Device Options: vgaGame.sof ;
++----------------+----------------------+
+; Option         ; Setting              ;
++----------------+----------------------+
+; JTAG usercode  ; 0x00277591           ;
+; Checksum       ; 0x00277591           ;
++----------------+----------------------+
 
 
 +--------------------+
@@ -78,14 +116,28 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Mar 19 12:43:50 2026
-Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off vgaGame -c vgaGame
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Fri Apr  3 23:54:15 2026
+Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off vgaGame -c vgaGame
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4695 megabytes
-    Info: Processing ended: Thu Mar 19 12:43:52 2026
+    Info: Peak virtual memory: 364 megabytes
+    Info: Processing ended: Fri Apr  3 23:54:17 2026
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
